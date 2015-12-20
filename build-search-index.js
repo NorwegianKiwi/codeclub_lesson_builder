@@ -9,12 +9,12 @@ require('lunr-no/lunr.stemmer.support')(lunr);
 require('lunr-no')(lunr);
 var metlunr = require('metalsmith-lunr');
 var config = require('./config.js');
-var tools = require('./tools.js')
+var tools = require('./tools.js');
 
 // lunr: true on all .md files
 var metadataOptions = [
   { pattern: '**/*.md',
-    metadata: { lunr: true }},
+    metadata: { lunr: true }}
 ];
 
 // for is not a stopword in this context
@@ -45,7 +45,7 @@ module.exports = function build(callback){
     fields: {
       contents: 1,
       title: 10,
-      tags: 20,
+      tags: 20
     },
     pipelineFunctions: [
       lunr.no.trimmer,

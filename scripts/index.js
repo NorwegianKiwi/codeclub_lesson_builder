@@ -41,7 +41,7 @@ $('input[for^="test-"]').keyup(function(event){
    var section = this.attributes.for.value;
    $("section."+ section).slideDown();
  }
-})
+});
 
 
 /*
@@ -55,7 +55,7 @@ $('.playlists > a[href^="http"], .level > a[href^="http"]')
 var openExternalPopover;  // global state
 function externalResourcePopover(type) {
   return function(){
-    var content = '<p>This is an external '+ type +'.<br><br>'
+    var content = '<p>This is an external '+ type +'.<br><br>';
     content += '<a href="'+ this.href +'">Continue to '+ type +'.</a></p>';
     $(this).popover({
       animate: true,
