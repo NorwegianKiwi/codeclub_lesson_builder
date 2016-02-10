@@ -6,6 +6,7 @@ import './search.js';
 import './intro.js';
 import './playlist.js';
 import i18n from './i18n.js';
+import './comments.js'
 
 let t;
 i18n.on('initialized', () => {
